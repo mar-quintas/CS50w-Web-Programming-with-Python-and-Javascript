@@ -1,0 +1,127 @@
+.linkh {
+  font-family: arial, sans-serif;
+  font-size:13px;
+  vertical-align:middle;
+  line-height: 24px;
+  font-style:normal;
+  text-decoration:none;
+  color: rgba(0,0,0,0.87);
+  padding:10px;
+}
+
+header {
+  margin: 20px;
+  text-align: right;
+}
+
+.title {
+  font-family: Roboto;
+  font-size:60px;
+  text-align:center;
+  margin: 30px;
+  font-weight: bold
+}
+.googleBlue {
+
+  color: #4285f4;
+}
+
+.googleRed {
+  color: #ea4335;
+
+}
+
+.googleYellow {
+  color: #fbbc05;
+
+}
+
+.googleGreen{
+  color: #34a853;
+}
+
+.btn.btn-light:hover {
+  border-style: groove;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+
+}
+
+#searchBar{
+  border-left: none;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#searchSpan{
+  border-radius:15px;
+  border-radius: 15px 0px 0px 15px;
+  border-right: none;
+  color: lightgrey;
+  background-color:white;
+
+}
+
+#image{
+  right: 70px;
+  color: #4487f6;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  position: relative;
+  top: 15px;
+  white-space: nowrap;
+}
+
+/* .dark{
+  background-color: black;
+  color: #bdc1c6;
+
+}
+
+.form-control.dark_input:focus, .form-control.dark_input {
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid #bdc1c6;
+  background: black;
+  color: #bdc1c6;
+} */
+
+.container-fluid .form-control {
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid #bdc1c6;
+}
+
+.col-form-label.small {
+  font-size: 13px
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn-primary.bold {
+  font-weight: bold;
+}
+
+.titlegoogle {
+  font-size: 25px
+}
+
+.subtitle {
+  color: #f28b82;
+  margin-left: 40px;
+}
+
+.col-form-label.smaller {
+  font-size:11px
+}
+
+/* .linkh.dark{
+    color: #bdc1c6;
+} */
+
+.container-fluid.margin-advancedS {
+    margin-left: 40px;
+}
+
+
+hr.gray {
+  background-color: gray;
+}
