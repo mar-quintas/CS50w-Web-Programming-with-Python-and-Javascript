@@ -28,6 +28,20 @@ def search(request):
     entry = util.get_entry(search)
 
     if entry == None:
+        entries = util.list_entries()
+        print(entries)
+        matches = []
+
+        for entry in entries:
+            if search.lower() in entry.lower():
+                matches.append(entry)
+
+        if not matches:
+            return HttpResponse(f"404 - {search} - was not found")
+        else:
+            return render(request, "encyclopedia/index.html", {
+                "entries": matches
+            })
 
             # render search result
             # search substrings to lower de los dos lados.
@@ -36,7 +50,7 @@ def search(request):
             # each{ entries_name[i].lower == title.lower} => entries_name[i]
             # render list entries_names_search_result un subset de entries_names como te lo da util.py
         # search substrings
-        return HttpResponse(f"Hello World {request.GET['q']}")
+
     else:
         return redirect(f'wiki/{search}')
     print (search)
