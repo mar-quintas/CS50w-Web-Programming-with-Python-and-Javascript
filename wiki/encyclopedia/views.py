@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django import forms
+from random import choice
 import markdown2
 
 from . import util
@@ -101,3 +102,6 @@ def edit(request, title):
         "title": title,
         })
     return HttpResponse(f"404 method not allowed")
+
+def random(request):
+    return redirect(f'wiki/{choice(util.list_entries())}')
